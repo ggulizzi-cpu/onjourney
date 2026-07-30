@@ -25,3 +25,19 @@ Mix: VO tempo-fit into dialogue gaps (0.2s / 9.8s / 23.8s), jingle orchestra und
 
 Lesson: Higgsfield job_display status can stay 'in_progress' long after the output file
 exists — before re-rolling a "stuck" job, probe the predictable output URL pattern first.
+
+## v2 — 2026-07-30
+
+User notes on v1: VO unnaturally fast (root cause: fast speech_rate takes + heavy atempo
+stacked); wanted much heavier degradation / lower perceived quality; more grain.
+v2 changes:
+- VO regenerated at natural pace with leaner copy that fits the dialogue gaps honestly
+  (dropped "Are the Reds making you jumpy?" and "Push-button simplicity!"); max nudge
+  now atempo 1.05-1.08. New takes: c2b58dda / e7323931 / e5e1a1ab (~1.5 cr).
+- Look: output downres'd to 640x480, gaussian soften, saturation 0.50, warm shift,
+  chroma fringing (chromashift), grain doubled (noise=24), stronger vignette, 9Hz
+  brightness flicker, slower fades.
+- Sound: band narrowed to 350-3200Hz, compression 4:1, hiss bed nearly doubled.
+v2 media_id: d07c4973-56af-4938-9d75-8b84b17de59c
+URL: https://d2ol7oe51mr4n9.cloudfront.net/user_31undoF7i6cu3qRde6al7QsmiT3/d07c4973-56af-4938-9d75-8b84b17de59c.mp4
+Cost: ~1.5 cr. Balance ~15.
