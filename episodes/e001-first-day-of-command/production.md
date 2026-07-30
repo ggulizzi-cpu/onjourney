@@ -24,13 +24,13 @@ Balance at shoot start: 1,559.7 · Casting: 5 × soul_cast ≈ 0.6 cr total
 | 6 Ward handover | 12s | 19994b22-a4ad-47ec-b4f0-3a8ef0cda901 | 108 | submitted | |
 | 7 militiamen gossip | 10s | 5596bc54-95c7-4eba-a77f-d506dd9662f4 | 90 | submitted | preset declined, resubmitted |
 | 8 confessional Reed | 10s | 0d897248-b8a2-4c47-9155-540a04332a15 | 90 | submitted | |
-| 9 huzzah | 10s | — | 90 | queued (preset notice; resubmit literal) | |
-| 10 take a letter | 8s | — | 72 | queued (429 slots full) | |
-| 11 letters gag (no VO) | 10s | — | 90 | queued (preset notice; resubmit literal) | |
-| 12 latrine | 10s | — | 90 | queued (429) | |
-| 13 Knox entrance | 12s | — | 108 | queued (429) | |
-| 14 confessional Knox | 8s | — | 72 | queued (429) | |
-| 15 end card | 8s | — | 72 | queued (429) | |
+| 9 huzzah | 10s | caf2e5d9-4bdb-4299-b781-38beaff271cc | 90 | submitted | |
+| 10 take a letter | 8s | e8d19bb6-52b4-48c6-80c5-7a01e843c196 | 72 | submitted | |
+| 11 letters gag (no VO) | 10s | d4d38cb2-bc09-471e-b707-622b52a6be66 | 90 | submitted | |
+| 12 latrine | 10s | 31e2d757-c7ba-455f-b61d-43a3c3645c3a | 90 | submitted | |
+| 13 Knox entrance | 12s | f588216c-3721-42ec-9bfd-9155ae2434f4 | 108 | submitted | |
+| 14 confessional Knox | 8s | 78b86f8f-75ff-41b3-b716-3c0aff7bdf18 | 72 | submitted | |
+| 15 end card | 8s | 02dbdd28-c205-4846-bce3-6070bc577b63 | 72 | submitted | |
 
 Parallel cap: 8 concurrent videos (Max plan). Batch 2 resubmits as slots free.
 
