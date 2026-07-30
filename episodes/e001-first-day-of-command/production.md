@@ -83,3 +83,16 @@ music/SFX model, so:
 - Sound-mix media_id: bee28fcd-8190-47fa-be2c-b1a6a192613d
 - URL: https://d2ol7oe51mr4n9.cloudfront.net/user_31undoF7i6cu3qRde6al7QsmiT3/bee28fcd-8190-47fa-be2c-b1a6a192613d.mp4
 - Sound pass cost: ~37.5 cr. Balance: 262.3 → 224.8.
+
+## QC pass v3 — 2026-07-30
+
+Scene-by-scene video analysis (job fd14ea0b) + frame review. Findings:
+- Title card correct ("HIS EXCELLENCY"), cast faces consistent, all dialogue verbatim.
+- FIXED: end card text stutter ("ACT II / ACT II COMING SOON") — replaced last 8s of
+  video with a nano_banana still (verified spelling) + Ken Burns push + fades; original
+  fife outro audio kept untouched. v3 media_id: 2c09eb90-ad25-4141-ab58-719e01d43004
+  URL: https://d2ol7oe51mr4n9.cloudfront.net/user_31undoF7i6cu3qRde6al7QsmiT3/2c09eb90-ad25-4141-ab58-719e01d43004.mp4
+- KNOWN, unfixed (await call): block 11 letters gag — British red-uniform handshake at
+  1:38 + stray pointing hand at 1:41 (re-roll ~90 cr); block 9 huzzah — Washington's
+  line-half mouthed by tankard officer (re-roll ~90 cr, or keep: reaction cut plays).
+- QC cost: end card image ~2 cr. Balance ~222.
