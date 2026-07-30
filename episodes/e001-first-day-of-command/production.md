@@ -141,3 +141,14 @@ Diagnosis:
 v5 media_id: 0f0d7378-a16b-400a-a218-df943e8322cd
 URL: https://d2ol7oe51mr4n9.cloudfront.net/user_31undoF7i6cu3qRde6al7QsmiT3/0f0d7378-a16b-400a-a218-df943e8322cd.mp4
 Cost: 0 credits (post only).
+
+## v6 — 2026-07-30
+
+User: v5 ambience/SFX almost inaudible — wanted middle ground vs v4's cannon loop.
+Cause: new bed source slice is ~20dB quieter content than the boomy v2 slice AND the
+fader was lowered — double reduction. v6: same boom-free slice (0.3-3.5s), gain restored
+to effective v2-era presence (bed 0.85 exteriors / 0.70 under harpsichord, ~16dB up from
+v5), harpsichord 0.22→0.26. All else identical to v5.
+v6 media_id: 7ac65be9-4704-498d-845a-64b7db7521b3
+URL: https://d2ol7oe51mr4n9.cloudfront.net/user_31undoF7i6cu3qRde6al7QsmiT3/7ac65be9-4704-498d-845a-64b7db7521b3.mp4
+Cost: 0 credits.
