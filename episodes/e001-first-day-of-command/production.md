@@ -16,21 +16,21 @@ Balance at shoot start: 1,559.7 · Casting: 5 × soul_cast ≈ 0.6 cr total
 
 | block | len | job id | credits | status | notes |
 |---|---|---|---|---|---|
-| 1 cold open cannon | 10s | a5f0da0e-244e-4c4a-963d-10c1dc130dee | 90 | submitted | |
-| 2 where is the army | 10s | 8acd52ba-f710-48d2-ae73-faa4bf2c5068 | 90 | submitted | |
-| 3 splendid | 8s | f9fbcade-5a3f-47f7-8495-5f6a89b5232c | 72 | submitted | |
-| 4 title card | 8s | 85504e12-c16d-413d-a473-4fe937ed45fc | 72 | submitted | preset declined, resubmitted |
-| 5 confessional George | 10s | e461b768-13c0-4477-b0c4-ebdb19ecd602 | 90 | submitted | |
-| 6 Ward handover | 12s | 19994b22-a4ad-47ec-b4f0-3a8ef0cda901 | 108 | submitted | |
-| 7 militiamen gossip | 10s | 5596bc54-95c7-4eba-a77f-d506dd9662f4 | 90 | submitted | preset declined, resubmitted |
-| 8 confessional Reed | 10s | 0d897248-b8a2-4c47-9155-540a04332a15 | 90 | submitted | |
-| 9 huzzah | 10s | caf2e5d9-4bdb-4299-b781-38beaff271cc | 90 | submitted | |
-| 10 take a letter | 8s | e8d19bb6-52b4-48c6-80c5-7a01e843c196 | 72 | submitted | |
-| 11 letters gag (no VO) | 10s | d4d38cb2-bc09-471e-b707-622b52a6be66 | 90 | submitted | |
-| 12 latrine | 10s | 31e2d757-c7ba-455f-b61d-43a3c3645c3a | 90 | submitted | |
-| 13 Knox entrance | 12s | f588216c-3721-42ec-9bfd-9155ae2434f4 | 108 | submitted | |
-| 14 confessional Knox | 8s | 78b86f8f-75ff-41b3-b716-3c0aff7bdf18 | 72 | submitted | |
-| 15 end card | 8s | 02dbdd28-c205-4846-bce3-6070bc577b63 | 72 | submitted | |
+| 1 cold open cannon | 10s | a5f0da0e-244e-4c4a-963d-10c1dc130dee | 90 | done | |
+| 2 where is the army | 10s | 8acd52ba-f710-48d2-ae73-faa4bf2c5068 | 90 | done | |
+| 3 splendid | 8s | f9fbcade-5a3f-47f7-8495-5f6a89b5232c | 72 | done | |
+| 4 title card | 8s | 85504e12-c16d-413d-a473-4fe937ed45fc | 72 | done | preset declined, resubmitted |
+| 5 confessional George | 10s | e461b768-13c0-4477-b0c4-ebdb19ecd602 | 90 | done | |
+| 6 Ward handover | 12s | 19994b22-a4ad-47ec-b4f0-3a8ef0cda901 | 108 | done | |
+| 7 militiamen gossip | 10s | 5596bc54-95c7-4eba-a77f-d506dd9662f4 | 90 | done | preset declined, resubmitted |
+| 8 confessional Reed | 10s | 0d897248-b8a2-4c47-9155-540a04332a15 | 90 | done | |
+| 9 huzzah | 10s | caf2e5d9-4bdb-4299-b781-38beaff271cc | 90 | done | |
+| 10 take a letter | 8s | e8d19bb6-52b4-48c6-80c5-7a01e843c196 | 72 | done | |
+| 11 letters gag (no VO) | 10s | d4d38cb2-bc09-471e-b707-622b52a6be66 | 90 | done | |
+| 12 latrine | 10s | 31e2d757-c7ba-455f-b61d-43a3c3645c3a | 90 | done | |
+| 13 Knox entrance | 12s | f588216c-3721-42ec-9bfd-9155ae2434f4 | 108 | done | |
+| 14 confessional Knox | 8s | 78b86f8f-75ff-41b3-b716-3c0aff7bdf18 | 72 | done | |
+| 15 end card | 8s | 02dbdd28-c205-4846-bce3-6070bc577b63 | 72 | done | |
 
 Parallel cap: 8 concurrent videos (Max plan). Batch 2 resubmits as slots free.
 
@@ -38,7 +38,7 @@ Parallel cap: 8 concurrent videos (Max plan). Batch 2 resubmits as slots free.
 
 | item | voice | job id | status |
 |---|---|---|---|
-| Block 11 VO (George's letter) | Arthur (preset 30fc8796), rate -8 | 861382da-f477-4f02-a3e2-f1715040481b | submitted |
+| Block 11 VO (George's letter) | Arthur (preset 30fc8796), rate -8 | 861382da-f477-4f02-a3e2-f1715040481b | done |
 
 ## Post plan
 
@@ -48,3 +48,23 @@ Parallel cap: 8 concurrent videos (Max plan). Batch 2 resubmits as slots free.
   loudness normalize, upload via media_upload + media_confirm for delivery.
 - Note: this workspace's egress policy blocks the Higgsfield CDN, so ALL media work
   happens inside the Higgsfield sandbox; delivery to the user via job_display/media link.
+
+## Act I wrap — 2026-07-30
+
+- All 15 shots completed on first take. Zero failed generations, zero retries.
+- Final cut: 2:25 (145.1s), 1920x1080, 105 MB. Assembled in the Higgsfield sandbox:
+  per-clip normalize (h264 crf18 / 24fps / aac 48k), Arthur VO tempo-fit + mixed under
+  block 11 at -10dB ambience, concat, loudnorm (-16 LUFS), uploaded to Higgsfield media.
+- Final media_id: 33f03595-54c8-4eb9-91f2-ca0de7740ba4
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_31undoF7i6cu3qRde6al7QsmiT3/33f03595-54c8-4eb9-91f2-ca0de7740ba4.mp4
+
+## Ledger
+
+| item | credits |
+|---|---|
+| Casting: 5 soul_cast portraits | ~0.6 |
+| 15 Seedance 2.0 clips (144s @ 9/s) | 1,296 |
+| Block 11 VO (seed_audio) | ~0.8 |
+| **Total** | **~1,297.4** |
+
+Balance: 1,559.7 → 262.3. Act II (blocks 16–30, ~151s ≈ 1,360 cr) needs a top-up.
