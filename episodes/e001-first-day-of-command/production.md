@@ -34,6 +34,12 @@ Balance at shoot start: 1,559.7 · Casting: 5 × soul_cast ≈ 0.6 cr total
 
 Parallel cap: 8 concurrent videos (Max plan). Batch 2 resubmits as slots free.
 
+## Audio jobs
+
+| item | voice | job id | status |
+|---|---|---|---|
+| Block 11 VO (George's letter) | Arthur (preset 30fc8796), rate -8 | 861382da-f477-4f02-a3e2-f1715040481b | submitted |
+
 ## Post plan
 
 - Block 11 VO (George's letter, "the most indifferent kind of men I ever saw") via
