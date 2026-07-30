@@ -68,3 +68,18 @@ Parallel cap: 8 concurrent videos (Max plan). Batch 2 resubmits as slots free.
 | **Total** | **~1,297.4** |
 
 Balance: 1,559.7 → 262.3. Act II (blocks 16–30, ~151s ≈ 1,360 cr) needs a top-up.
+
+## Sound pass v2 — 2026-07-30
+
+User note: add background ambience, SFX weight, and music. Platform has no standalone
+music/SFX model, so:
+- Camp ambience bed extracted free from block 1's native audio (pre-boom camp murmur),
+  looped, laid under the four exterior stretches (0–28, 46–68, 78–96, 106–128) at low level.
+- Two music cues generated as cheap Seedance audio-carrier clips (480p fast, audio ripped):
+  fife-and-drum march (19f04772, 15 cr) under the opening camp reveal (fades out before
+  dialogue), sneaky baroque harpsichord (a9fbe6f6, 22.5 cr) under latrine + Knox (106–127).
+- Master chain: highpass 35Hz, +2.5dB low shelf @95Hz (cannon weight), 2:1 compression,
+  loudnorm -16 LUFS. Confessionals and sincere beats stay dry per the bible's Office rule.
+- Sound-mix media_id: bee28fcd-8190-47fa-be2c-b1a6a192613d
+- URL: https://d2ol7oe51mr4n9.cloudfront.net/user_31undoF7i6cu3qRde6al7QsmiT3/bee28fcd-8190-47fa-be2c-b1a6a192613d.mp4
+- Sound pass cost: ~37.5 cr. Balance: 262.3 → 224.8.
