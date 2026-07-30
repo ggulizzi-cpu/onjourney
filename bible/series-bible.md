@@ -37,6 +37,11 @@ its script file listing what's documented vs. compressed.
 - Handheld coverage, snap zooms, push-ins on reactions.
 - Characters glance at the lens. Reed is the primary camera-look character (the Jim).
 - The crew is never acknowledged in dialogue. Ever.
+- **The camera never sits still.** Every block carries a CAMERA line: movement (track,
+  crane, orbit, whip-pan, push-in) and internal cuts via Seedance multi-shot prompting —
+  2–3 cuts inside a 10–12s block is the default. Exceptions must earn their stillness
+  (confessionals run micro-drift + slow push; a locked shot is reserved for moments
+  where stillness IS the joke or the gut punch).
 
 ## Tone rules (the early-Simpsons clause)
 
@@ -44,8 +49,14 @@ its script file listing what's documented vs. compressed.
 2. Historical figures get roasted for ego, hypocrisy, and pettiness — but they stay
    human and stay competent enough to explain why history happened.
 3. No joke survives if it requires the characters to be stupid. They're flawed, not dumb.
-4. PG-13. War is present but not gratuitous. Death is treated with weight when shown.
+4. PG-13. Crude is allowed — latrines, rum, bodily indignity, the 18th century was
+   gross — but always classy about it, early-Simpsons style: the joke is the reaction
+   and the wording, never the gross-out itself. War is present but not gratuitous.
+   Death is treated with weight when shown.
 5. Catharsis is mandatory. The last 60 seconds pay something off emotionally.
+6. Four-quadrant by craft, not by watering down: Gen X/millennials get the workplace
+   satire and historical irony, Gen Z/Alpha get pace, absurdity, and characters who
+   would clip well — the same joke should work at two altitudes.
 
 ## Core cast (season one)
 
@@ -91,6 +102,11 @@ it is never fixed; it is the show's Jim-face).
 - **Character consistency:** locked cast reference portraits (Soul / Soul Cast),
   attached as `image_references` on every shot that character appears in.
 - **Shot duration:** 6–15s per Seedance constraints. Dialogue ≤ 2 short lines per shot.
+- **Sound bar — no AI slop:** dialogue direction (dry, deadpan, naturalistic) embedded
+  in every prompt; letter voiceovers auditioned across multiple voices before the shoot
+  and sweetened with room tone; original fife-and-drum theme; comedy plays dry without
+  score (The Office rule), underscore reserved for the sincere beat; ffmpeg sweetening
+  pass for key SFX (cannon low end, clock ticks, crowd weight).
 - **Confessional setup (reusable prompt block):** subject seated slightly off-center,
   17th-century wainscoted room (Vassall House HQ), window light from left, documentary
   handheld micro-shake, shallow depth of field.
