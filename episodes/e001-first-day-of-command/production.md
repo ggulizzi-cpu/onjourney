@@ -96,3 +96,29 @@ Scene-by-scene video analysis (job fd14ea0b) + frame review. Findings:
   1:38 + stray pointing hand at 1:41 (re-roll ~90 cr); block 9 huzzah — Washington's
   line-half mouthed by tankard officer (re-roll ~90 cr, or keep: reaction cut plays).
 - QC cost: end card image ~2 cr. Balance ~222.
+
+## v4 rebuild — 2026-07-30
+
+User flagged: audio massively delayed in second half + stutters, lip-sync issues,
+voice inconsistency (George), 1-second internal cuts, screen-position continuity,
+toothpick/pipe hallucinations.
+
+Root cause of the drift (post bug, mine): assembly used concat demuxer with -c copy,
+which accumulates AAC priming-gap error at every joint (~15 joints), so audio lag grows
+through the video and compounds perceived lip-sync error.
+
+Fix in v4: single filter_complex concat over all 15 blocks; every segment hard-locked
+to its scripted duration (video trim + audio apad/atrim to exactly 10/10/8/8/10/12/...),
+async-resampled audio, VO + music + ambience re-laid at exact nominal timestamps,
+corrected end card, master chain. Result: exactly 144.000s, drift structurally impossible.
+v4 media_id: 75bed673-d68d-42e1-b432-8362a42f1489
+URL: https://d2ol7oe51mr4n9.cloudfront.net/user_31undoF7i6cu3qRde6al7QsmiT3/75bed673-d68d-42e1-b432-8362a42f1489.mp4
+
+Generation-level defects (not fixable in post; pipeline changes for Act II + re-rolls):
+1. George voice differs per clip → record one George voice sample, attach as
+   audio_references to every clip he speaks in (Seedance supports voice-reference).
+2. In-clip lip-sync wobble → shorter lines per shot, one speaker per internal cut.
+3. 1-second internal cuts → max 2 internal cuts per block, explicit per-cut durations.
+4. Screen-side continuity → lock screen direction in prompts (George frame-left etc.)
+   and reuse an establishing still per location as image reference.
+5. Prop hallucinations (pipes/toothpicks) → explicit negative lines in every prompt.
