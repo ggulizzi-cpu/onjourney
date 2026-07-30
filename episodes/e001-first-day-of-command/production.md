@@ -122,3 +122,22 @@ Generation-level defects (not fixable in post; pipeline changes for Act II + re-
 4. Screen-side continuity → lock screen direction in prompts (George frame-left etc.)
    and reuse an establishing still per location as image reference.
 5. Prop hallucinations (pipes/toothpicks) → explicit negative lines in every prompt.
+
+## v5 — 2026-07-30
+
+User flagged on v4: (a) cannon boom repeating ~every 5s all video; (b) second half feels
+slow "like fps change".
+
+Diagnosis:
+(a) Confirmed via waveform scan: boom peaks at sec 4-6 of block 1; the v2 ambience bed
+    slice (0.4-5.6s) included it, looped every 5.2s under four stretches. Fixed: bed now
+    cut from verified-quiet 0.3-3.3s window (max -22dB), volume lowered to 0.13.
+(b) FPS probe: ALL 15 clips native 24fps (batch 1 and 2 identical) — no frame-rate
+    fault. The slow feel is in-clip slow-motion rendered by Seedance in later blocks.
+    Treated in post: 1.1x time-compression (video setpts + audio atempo, pitch kept) on
+    blocks 9-13; VO tempo adjusted to fit; music/bed timestamps recomputed. Knox
+    confessional + end card untouched. New runtime 2:19.5 (139.5s).
+
+v5 media_id: 0f0d7378-a16b-400a-a218-df943e8322cd
+URL: https://d2ol7oe51mr4n9.cloudfront.net/user_31undoF7i6cu3qRde6al7QsmiT3/0f0d7378-a16b-400a-a218-df943e8322cd.mp4
+Cost: 0 credits (post only).
