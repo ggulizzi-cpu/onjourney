@@ -214,3 +214,36 @@ Prep / post assets:
 - Cannon still for II-12 extracted from Act I block 1 @8s: media 55826bdf.
 
 Cost: 13 × 135 = 1,755 cr (incl. II-2a re-roll) + carrier/card/VO ~25 cr.
+
+## Act II QC + full-episode assembly — 2026-07-31
+
+QC (video_analysis on labeled 720p reels + faster-whisper + waveform scans):
+- Sound-truth rules held: dogs silent (paws/jingle only) in II-2a/2b; wolfhound
+  vocalizes ON camera in II-3 before "Six." All dialogue verbatim except II-6
+  dropped "Are they hitting any?/No, sir." (joke intact — kept).
+- FIXED in post: II-7 insert paper read "CARTEL PARRES" with $ figures (gibberish
+  + anachronism) → replaced insert video (5.667–9.833s in-clip) with nano_banana
+  period doc "Return of Powder ..... 36" (18064c5e, spelling verified), original
+  off-screen dialogue audio kept, slow zoompan.
+- FIXED in post: II-12 George said "Log the powder" twice (5.80–7.06 + 7.06–8.92)
+  → second repetition excised with punch-in jump cut (1.08x), clip now 13.14s.
+- FIXED in mix: II-8 whisper near-inaudible (−45 dB) → clip audio +10 dB, limited.
+- II-4 "NON-NEGOTIABLE" crowd-doubled (two pitch-shifted delayed layers).
+
+Assembly (single filter_complex, exact-duration segments, v4 lesson applied):
+- Act II reel: 15 segments = II-1..II-13 + END card, 218.340s exactly.
+  II-11 extended to 17.2s (clone-pad hold on the smile) so the Martha VO fits.
+- Martha VO: silence-tightened + atempo 1.0843 → 18.49s, enters at II-10 13.7s
+  (after "We bluff."), runs across the letter montage, ends 0.4s before the dawn
+  cannon boom (II-12 boom at ~0.5s in-clip) — postscript → BOOM button.
+- Music: harpsichord under Lee's arrival (15–45s of Act II), strings under the
+  letter beat (165–182s), fife outro under the END card. Boom-free ambience beds
+  at v6 gains under exteriors (0–45, 60–75, 90–105, dawn tag).
+- Master: highpass 35 Hz, +2.5 dB low shelf @95 Hz, 2:1 comp, loudnorm −16 LUFS.
+- Full episode = Act I v6 (first 131.4s, its end card dropped) + Act II reel.
+  FULL RUNTIME 349.764s (5:49.8), 1080p24, 209 MB.
+
+FULL EPISODE media_id: b1e02b84-ea97-4516-a7fb-351e48b59d1a
+URL: https://d2ol7oe51mr4n9.cloudfront.net/user_31undoF7i6cu3qRde6al7QsmiT3/b1e02b84-ea97-4516-a7fb-351e48b59d1a.mp4
+Assembly cost: 0 cr (post only). QC cost: doc image ~2 cr + analyses free.
+Balance after Act II: ~3,950.
