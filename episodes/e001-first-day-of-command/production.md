@@ -172,3 +172,45 @@ https://d8j0ntlcm91z4.cloudfront.net/user_31undoF7i6cu3qRde6al7QsmiT3/hf_2026073
 
 Spend: ~271 cr (2 clips + 2 portraits). Gate: user judges vs Act I before batch-shooting
 the remaining Act II scenes (~9 scenes ≈ 1,200 cr).
+
+Verdict: II-1 approved enthusiastically. II-2a notes — dogs bark in audio without barking
+on camera, motion snappy/not smooth, lip-sync imperfect, SFX thin. Fixes encoded into the
+Style Prefix rev. 2 (Motion fluidity clause + Sound-truth rule: every sound has a visible
+or explicit off-screen source; animals quiet unless shown vocalizing).
+
+## Act II full shoot — 2026-07-31
+
+All prompts per seedance-shotlist-director format, Style Prefix rev. 2. 15s / 1080p std /
+16:9 / genre comedy (II-11 auto) / 135 cr each. George's voice locked via audio_references
+(c5b1aa9e) on every clip he speaks in. Full as-shot prompt text: shotlist-act2.html.
+
+Batch A (8 jobs — all completed first take):
+| scene | job id | notes |
+|---|---|---|
+| II-2a Lee arrives (re-roll, silent dogs) | 15fe2cbc-9e03-40d2-82ea-4b5f92c23085 | replaces 4226b1dc |
+| II-2b "Some taken." | 2a2df71a-0e79-47b0-9948-36285f7445df | |
+| II-3 Lee confessional (dog barks ON camera → "Six.") | 57fa5de0-33e4-49dd-aba1-b3464d0665fe | |
+| II-4 Rum mutiny ("NON-NEGOTIABLE") | 847aebaa-2682-4fc7-b12d-3085b115a31d | |
+| II-5 George confessional ("lost a vote") | 7678d042-9c7e-4d76-9ab7-7c0e953f51ab | |
+| II-6 Geese / powder | 1e2d9b04-070d-4015-9bf9-3a2490eb2e12 | |
+| II-7 War room Gates ("Nine rounds each. Ish.") | 372f2b24-ece9-45b0-b3eb-d4c81187a7c2 | |
+| II-8 The Silence (unbroken push-in) | 1e15beee-cd7c-4068-992e-58560e1ba3b5 | |
+
+Batch B (5 jobs, fired 14:26Z):
+| scene | job id | notes |
+|---|---|---|
+| II-9 Reed confessional ("nine bullets a man") | 684b1b33-da01-4b89-8667-e2da3b149013 | |
+| II-10 "We bluff." (George face-away for long line) | c8d1a45a-4ded-4576-babd-fdfda68d5763 | |
+| II-11 Letter to Martha (silent; VO in post) | 35febfe3-d7c3-4076-881f-3309a7c6b5af | genre auto |
+| II-12 Dawn cannon tag | 2dc7c4a6-7066-49be-877b-a1e8cc7b46a6 | cannon still ref 55826bdf |
+| II-13 Final George confessional ("It will have to do.") | ddbfe572-eb8e-4b11-b88c-d595e13db4dc | |
+
+Prep / post assets:
+- Martha-letter VO (Arthur preset, natural pace): c7cc0453 — raw 24.4s; silence-tightened
+  + atempo 1.07 → 18.75s. Plan: bridge across II-10 tail → II-11 → II-12 quiet dawn open,
+  postscript landing just before the cannon (joke rhythm). Insurance brisker take: 065ae19f.
+- Soft period-strings underscore carrier (480p fast 15s): dc4280b5 (audio verified present).
+- "END OF EPISODE ONE" nano_banana card: 84c7a9cd — spelling verified via sandbox relay.
+- Cannon still for II-12 extracted from Act I block 1 @8s: media 55826bdf.
+
+Cost: 13 × 135 = 1,755 cr (incl. II-2a re-roll) + carrier/card/VO ~25 cr.

@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>HIS EXCELLENCY — Act II — Director's Shotlist</title>
+<style>
+  :root {
+    --bg: #0e0e10; --panel: #17171a; --panel-2: #1d1d21; --border: #2a2a30;
+    --text: #e8e8ea; --text-dim: #9a9aa2; --accent: #d4a259; --done: #4ade80;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    line-height: 1.5; padding: 32px 24px 80px; }
+  .container { max-width: 980px; margin: 0 auto; }
+  h1 { font-size: 28px; font-weight: 600; margin: 0 0 4px; letter-spacing: -0.02em; }
+  .subtitle { color: var(--text-dim); font-size: 14px; margin-bottom: 32px; }
+  .howto { background: var(--panel); border: 1px solid var(--border); border-radius: 8px;
+    padding: 14px 18px; font-size: 13px; color: var(--text-dim); margin-bottom: 24px; }
+  details.style-prefix { background: var(--panel); border: 1px solid var(--border); border-radius: 8px;
+    padding: 14px 18px; margin-bottom: 32px; }
+  details.style-prefix summary { cursor: pointer; font-weight: 600; color: var(--accent); user-select: none; }
+  details.style-prefix pre { margin: 14px 0 0; padding: 14px; background: var(--panel-2); border-radius: 6px;
+    font-family: "SF Mono", Menlo, Consolas, monospace; font-size: 12.5px; white-space: pre-wrap; color: var(--text); }
+  .scene { background: var(--panel); border: 1px solid var(--border); border-radius: 10px;
+    padding: 20px 22px; margin-bottom: 18px; }
+  .scene-header { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 14px; }
+  .scene-header input[type="checkbox"] { width: 20px; height: 20px; margin-top: 2px; accent-color: var(--done);
+    cursor: pointer; flex-shrink: 0; }
+  .scene-num { font-size: 18px; font-weight: 700; color: var(--accent); min-width: 56px; }
+  .scene-desc { font-size: 15px; color: var(--text); flex: 1; }
+  .scene.done .scene-desc { text-decoration: line-through; color: var(--text-dim); }
+  .prompt-block { background: var(--panel-2); border: 1px solid var(--border); border-radius: 6px;
+    margin-top: 12px; overflow: hidden; }
+  .prompt-label { display: flex; justify-content: space-between; align-items: center;
+    padding: 8px 14px; background: rgba(255,255,255,0.02); border-bottom: 1px solid var(--border);
+    font-size: 12px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.05em; }
+  .copy-btn { background: transparent; color: var(--accent); border: 1px solid var(--border);
+    border-radius: 4px; padding: 4px 10px; font-size: 11px; cursor: pointer;
+    text-transform: uppercase; letter-spacing: 0.05em; font-family: inherit; }
+  .copy-btn:hover { border-color: var(--accent); }
+  .copy-btn.copied { color: var(--done); border-color: var(--done); }
+  pre.prompt { margin: 0; padding: 14px 16px; font-family: "SF Mono", Menlo, Consolas, monospace;
+    font-size: 12.5px; white-space: pre-wrap; color: var(--text); }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>HIS EXCELLENCY — Episode 1, Act II</h1>
+  <div class="subtitle">Director's Shotlist · Seedance 2.0 · Full act: scenes 1–13 (as shot)</div>
+
+  <div class="howto">
+    Tick scenes as you finish them — your progress saves automatically.
+    Click the Copy button on any prompt to grab the full text (Style Prefix + Characters + Scene + Cuts).
+    Want changes? Tell Claude what to revise and the file updates.
+    Production notes: every prompt below is the exact text sent to Seedance for the final take.
+    Cast reference images, Act I location stills, and the General's voice reference (audio) are attached
+    at generation time — "first/second/third reference image" in the prompts refers to those.
+    Scene 11 is shot silent; the letter voiceover is recorded separately and laid in post.
+  </div>
+
+  <details class="style-prefix">
+    <summary>Global Style Prefix (applied to every prompt) — HIS EXCELLENCY house style, rev. 2</summary>
+    <pre>Style: Ultra-photorealistic cinematic mockumentary — The Office (US) documentary grammar set in July 1775. Shot on 35mm film, handheld documentary camera. Fully photographic realism, never animated.
+World: Continental Army camp, Cambridge, Massachusetts, summer 1775. Everything period-authentic. Absolutely no modern objects.
+Lighting: Natural light only — overcast New England daylight. Camera on the shadow side. Faint campfire-smoke haze.
+Camera: Documentary-crew behavior — handheld micro-shake, snap-zooms onto reactions, refocus pulls. Every move motivated.
+Motion: Fluid, smooth, natural human and animal movement at real-time speed — no rushed or jerky motion, no slow motion. Hold reactions; let beats breathe.
+Acting: Dry deadpan workplace-documentary delivery. Micro-pauses, precise eye-lines, living eyes, chest rise from breathing. Characters may glance at the lens; the crew is never acknowledged.
+Dialogue: Spoken on camera exactly as scripted. ONE on-camera speaker per cut (off-screen replies allowed). The General&#x27;s voice matches the attached audio reference. No narrator, no music, no subtitles.
+Sound: Every audible event has a visible or explicitly off-screen source. Animals are QUIET unless shown vocalizing on camera — the dogs in this scene pant and jingle but never bark.
+Continuity: Match the attached reference images exactly — no identity drift, no unscripted props (no pipes, no toothpicks, no papers).
+Physics: Real weight, correct contact shadows, no floating props.
+Technical: 24fps, 180° shutter, maximum photoreal detail, no jitter.</pre>
+  </details>
+
+  <div class="scene">
+    <div class="scene-header">
+      <input type="checkbox" data-scene="1">
+      <div class="scene-num">1.</div>
+      <div class="scene-desc">Chain of command — Washington discovers that in this army, authority flows upward from Ezekiel. (Approved validation clip.)</div>
+    </div>
+
+    <div class="prompt-block">
+      <div class="prompt-label">
+        <span>Prompt 1 · 15s · job d1b8af67</span>
+        <button class="copy-btn">Copy</button>
+      </div>
+      <pre class="prompt">Style: Ultra-photorealistic cinematic mockumentary — The Office (US) documentary grammar set in July 1775. Shot on 35mm film, handheld documentary camera. Fully photographic realism, never animated.
+World: Continental Army camp, Cambridge, Massachusetts, summer 1775. Everything period-authentic — homespun linen, mud, canvas tents, muskets, goats. Absolutely no modern objects, no anachronisms.
+Lighting: Natural light only — overcast New England daylight. Camera on the shadow side. Faint campfire-smoke haze.
+Camera: Documentary-crew behavior — handheld micro-shake, snap-zooms onto reactions, refocus pulls. Every camera move is motivated: the operator is hunting the joke.
+Acting: Dry deadpan workplace-documentary delivery. Micro-pauses before reactions, precise eye-lines, living eyes with catch-lights, chest rise from breathing. Nobody mugs — the comedy is restraint. Characters may glance at the lens; the crew is never acknowledged in dialogue.
+Dialogue: Spoken on camera exactly as scripted. ONE on-camera speaker per cut (off-screen replies allowed). Natural American voices, dry and conversational — never theatrical. The General&#x27;s voice matches the attached audio reference. No narrator, no music, no subtitles.
+Continuity: Characters, wardrobe, props, and environment identical across every cut — match the attached reference images exactly. No identity drift. No props appearing in hands or mouths that are not scripted: no pipes, no toothpicks, no cigarettes, no papers.
+Physics: Real weight and inertia, correct contact shadows, no floating props.
+Technical: 24fps, 180° shutter motion blur, maximum photoreal detail, no jitter, no slow motion — all movement at natural real-time speed.
+
+Characters:
+GENERAL WASHINGTON — matches the first reference image exactly: mid-40s, tall, broad, auburn hair tied back in a queue, immaculate blue-and-buff Continental general&#x27;s uniform, white gloves held in his left hand. Two days into command; his patience has thinned but his posture has not.
+SERGEANT — New England militiaman, late 30s, sunburnt, patchy brown wool coat with mismatched buttons, three-day beard, the relaxed confidence of an elected official.
+EZEKIEL — lanky private, early 20s, homespun linen shirt, hat tipped over his eyes, spectacularly at ease.
+
+Scene:
+Mid-morning, overcast; the muddy camp work area matches the second reference image. A half-dug trench with two shovels standing in it, untouched. Ezekiel lounges against a split-rail fence at frame right, ten feet from the trench. Washington stands frame-left facing the Sergeant frame-right, eight feet apart, the trench between them. Camp bustle continues behind them, indifferent.
+
+CUT 1 — Handheld 35mm two-shot, chest height, slow lateral drift right, Washington frame-left, Sergeant frame-right:
+Washington&#x27;s eyes travel from the empty trench to the lounging private — an unhurried, complete assessment — then back to the Sergeant. A measured beat. Evenly, quietly: &quot;Sergeant. Order that man to dig.&quot; His chin indicates Ezekiel with the smallest possible movement. The Sergeant follows the gesture, then looks back, already apologetic.
+
+CUT 2 — Snap-zoom past their shoulders to Ezekiel at the fence, long-lens 85mm feel, quick refocus:
+Ezekiel, eyes closed under his tipped hat, arms folded, one boot crossed over the other, profoundly at peace. He exhales contentedly. Hold the comic beat a full two seconds. A goat bleats somewhere off-screen. Nobody speaks.
+
+CUT 3 — Reverse to the Sergeant, 50mm medium, static, Washington&#x27;s shoulder soft in the left foreground:
+The Sergeant leans in half a step, confidential, with the warm, patient tone of a man explaining something obvious to a foreigner: &quot;Can&#x27;t, sir. Ezekiel voted for me.&quot; A small, genuinely sympathetic shrug.
+
+CUT 4 — 85mm close on Washington, static, shallow focus, overcast key from his right:
+A micro-pause. His jaw sets a fraction. Flat, without heat: &quot;That is not how armies work.&quot; From off-screen, the Sergeant&#x27;s voice, cheerfully agreeing: &quot;It&#x27;s how this one works.&quot; Washington blinks once, and his eyes travel slowly — deliberately — to the documentary lens and hold there as his chest rises with one long, controlled breath.</pre>
+    </div>
+  </div>
+
+  <div class="scene">
+    <div class="scene-header">
+      <input type="checkbox" data-scene="2a">
+      <div class="scene-num">2a.</div>
+      <div class="scene-desc">General Charles Lee arrives — dogs first (silent, panting, jingling) — and opens his campaign for Washington&#x27;s job.</div>
+    </div>
+
+    <div class="prompt-block">
+      <div class="prompt-label">
+        <span>Prompt 2a · 15s · job 15fe2cbc</span>
+        <button class="copy-btn">Copy</button>
+      </div>
+      <pre class="prompt">Style: Ultra-photorealistic cinematic mockumentary — The Office (US) documentary grammar set in July 1775. Shot on 35mm film, handheld documentary camera. Fully photographic realism, never animated.
+World: Continental Army camp, Cambridge, Massachusetts, summer 1775. Everything period-authentic. Absolutely no modern objects.
+Lighting: Natural light only — overcast New England daylight. Camera on the shadow side. Faint campfire-smoke haze.
+Camera: Documentary-crew behavior — handheld micro-shake, snap-zooms onto reactions, refocus pulls. Every move motivated.
+Motion: Fluid, smooth, natural human and animal movement at real-time speed — no rushed or jerky motion, no slow motion. Hold reactions; let beats breathe.
+Acting: Dry deadpan workplace-documentary delivery. Micro-pauses, precise eye-lines, living eyes, chest rise from breathing. Characters may glance at the lens; the crew is never acknowledged.
+Dialogue: Spoken on camera exactly as scripted. ONE on-camera speaker per cut (off-screen replies allowed). The General&#x27;s voice matches the attached audio reference. No narrator, no music, no subtitles.
+Sound: Every audible event has a visible or explicitly off-screen source. Animals are QUIET unless shown vocalizing on camera — the dogs in this scene pant and jingle but never bark.
+Continuity: Match the attached reference images exactly — no identity drift, no unscripted props (no pipes, no toothpicks, no papers).
+Physics: Real weight, correct contact shadows, no floating props.
+Technical: 24fps, 180° shutter, maximum photoreal detail, no jitter.
+
+Characters:
+GENERAL WASHINGTON — matches the first reference image exactly: mid-40s, tall, auburn hair tied back, immaculate blue-and-buff uniform, gloves in left hand. Composed; his politeness has become armor.
+GENERAL CHARLES LEE — matches the second reference image exactly: mid-40s, gaunt, hawk-nosed, wind-blown dark hair, worn campaign coat with faded scarlet facings, muddy boots with spurs.
+THREE DOGS — descending in size: grey wolfhound, liver-and-white setter, small rough terrier. Muddy, confident, SILENT — panting, never barking.
+
+Scene:
+A camp lane between officer tents matching the third reference image. Overcast, muddy. Washington stands frame-left mid-lane. Lee approaches from frame-right, twenty feet out, his three dogs trotting ahead in loose formation, quiet and purposeful. Soldiers step out of the dogs&#x27; way; nobody steps out of Lee&#x27;s.
+
+CUT 1 — Low tracking shot at dog height, wide 24mm, moving with the dogs, mud filling the bottom of frame:
+The three dogs trot through the lane with total authority, tails high, panting softly — no barking — the terrier working hard to keep pace. Soldiers&#x27; boots shuffle aside at frame edges. The camera tilts up from the wolfhound to find LEE mid-stride behind his dogs, surveying the camp like an inspector who has already found it wanting. Audio: boots in mud, jingling buckles, soft panting, distant camp murmur.
+
+CUT 2 — Handheld 35mm two-shot: Lee arrives frame-right, stops six feet from Washington frame-left, dogs settling silently around Lee&#x27;s boots:
+Lee looks Washington up and down — uniform, gloves, posture — and relishes every syllable: &quot;Washington. Or should I say — His Excellency.&quot; Then, turning to look directly into the documentary lens, conversational: &quot;I was in actual wars. European ones.&quot;
+
+CUT 3 — Static 50mm two-shot, eye-level, locked off; the wolfhound sits down squarely between the two generals like a referee:
+A beat of quiet — only wind and distant camp sounds. Washington&#x27;s eyes go down to the three dogs, one by one, then back up to Lee. Perfectly level, perfectly polite: &quot;General Lee. Whose dogs are these?&quot; The terrier scratches its ear in silence. Hold on the standoff, both men breathing.</pre>
+    </div>
+  </div>
+
+  <div class="scene">
+    <div class="scene-header">
+      <input type="checkbox" data-scene="2b">
+      <div class="scene-num">2b.</div>
+      <div class="scene-desc">“Some taken.” — Lee&#x27;s dogs outrank the generals; Lee exits winning.</div>
+    </div>
+
+    <div class="prompt-block">
+      <div class="prompt-label">
+        <span>Prompt 2b · 15s · job 2a2df71a</span>
+        <button class="copy-btn">Copy</button>
+      </div>
+      <pre class="prompt">Style: Ultra-photorealistic cinematic mockumentary — The Office (US) documentary grammar set in July 1775. Shot on 35mm film, handheld documentary camera. Fully photographic realism, never animated.
+World: Continental Army camp, Cambridge, Massachusetts, summer 1775. Everything period-authentic. Absolutely no modern objects.
+Lighting: Natural light only — overcast New England daylight. Camera on the shadow side. Faint campfire-smoke haze.
+Camera: Documentary-crew behavior — handheld micro-shake, snap-zooms onto reactions, refocus pulls. Every move motivated.
+Motion: Fluid, smooth, natural human and animal movement at real-time speed — no rushed or jerky motion, no slow motion. Hold reactions; let beats breathe.
+Acting: Dry deadpan workplace-documentary delivery. Micro-pauses, precise eye-lines, living eyes, chest rise from breathing. Characters may glance at the lens; the crew is never acknowledged.
+Dialogue: Spoken on camera exactly as scripted. ONE on-camera speaker per cut (off-screen replies allowed). The General&#x27;s voice matches the attached audio reference. No narrator, no music, no subtitles.
+Sound: Every audible event has a visible or explicitly off-screen source. Animals are QUIET unless shown vocalizing on camera — the dogs pant and jingle but never bark.
+Continuity: Match the attached reference images exactly — no identity drift, no unscripted props (no pipes, no toothpicks, no papers).
+Physics: Real weight, correct contact shadows, no floating props.
+Technical: 24fps, 180° shutter, maximum photoreal detail, no jitter.
+
+Characters:
+GENERAL WASHINGTON — matches the first reference image exactly: mid-40s, tall, auburn hair tied back, immaculate blue-and-buff uniform, gloves in left hand.
+GENERAL CHARLES LEE — matches the second reference image exactly: gaunt, hawk-nosed, wind-blown dark hair, worn campaign coat with faded scarlet facings.
+THREE DOGS — grey wolfhound, liver-and-white setter, small rough terrier. Muddy, silent, panting.
+
+Scene:
+Same camp lane matching the third reference image, seconds after the standoff. Washington frame-left, Lee frame-right six feet apart, the wolfhound seated between them, setter and terrier at Lee&#x27;s boots. Same overcast light, same mud.
+
+CUT 1 — Static 50mm two-shot, continuing the standoff:
+Lee glances down at his dogs with genuine warmth — the only warmth he has — then back at Washington: &quot;Mine. Better company than most generals.&quot; A precise half-beat pause, eyes glittering: &quot;No offense.&quot;
+
+CUT 2 — 85mm close on Washington, static, shallow focus:
+A micro-pause. The smallest exhale through his nose. Level, dry as parchment: &quot;Some taken.&quot; His eyes hold Lee&#x27;s without heat — a man filing something away for later.
+
+CUT 3 — Wide 35mm handheld, the lane opening behind them:
+Lee sweeps past Washington toward the tents, coat swinging, the wolfhound and setter falling in behind him at a silent trot. The terrier stays one beat too long, staring up at Washington — then scrambles after the others through the mud. Washington watches them go, then turns his head slightly toward the documentary lens: not quite a look, just the beginning of one. Audio: boots, jingling buckles, wind, distant camp murmur — no barking.</pre>
+    </div>
+  </div>
+
+  <div class="scene">
+    <div class="scene-header">
+      <input type="checkbox" data-scene="3">
+      <div class="scene-num">3.</div>
+      <div class="scene-desc">Confessional: LEE — five languages; the wolfhound barks once, on camera. “Six.”</div>
+    </div>
+
+    <div class="prompt-block">
+      <div class="prompt-label">
+        <span>Prompt 3 · 15s · job 57fa5de0</span>
+        <button class="copy-btn">Copy</button>
+      </div>
+      <pre class="prompt">Style: Ultra-photorealistic cinematic mockumentary — The Office (US) documentary grammar set in July 1775. Shot on 35mm film, handheld documentary camera. Fully photographic realism, never animated.
+World: Continental Army camp, Cambridge, Massachusetts, summer 1775. Everything period-authentic. Absolutely no modern objects.
+Lighting: Natural light — soft daylight glowing through canvas tent walls.
+Camera: Documentary talking-head confessional — locked-off with handheld micro-drift, one slow push-in.
+Motion: Fluid, smooth, natural movement at real-time speed — no rushed or jerky motion, no slow motion. Hold reactions; let beats breathe.
+Acting: Dry deadpan workplace-documentary delivery. Micro-pauses, precise eye-lines, living eyes, chest rise from breathing. The subject speaks directly to the lens.
+Dialogue: Spoken on camera exactly as scripted. ONE speaker. Natural voice, dry and conversational. No narrator, no music, no subtitles.
+Sound: Every audible event has a visible or explicitly off-screen source. The dog barks exactly ONCE, on camera, visibly — at the scripted moment and at no other time.
+Continuity: Match the attached reference image exactly — no identity drift, no unscripted props.
+Physics: Real weight, correct contact shadows.
+Technical: 24fps, 180° shutter, maximum photoreal detail, no jitter.
+
+Characters:
+GENERAL CHARLES LEE — matches the reference image exactly: mid-40s, gaunt, hawk-nosed, wind-blown dark hair, worn campaign coat with faded scarlet facings. Seated in a wooden camp chair.
+THE WOLFHOUND — a grey wolfhound, its large head resting on Lee&#x27;s lap. Calm and quiet.
+
+Scene:
+Confessional interview inside an officer&#x27;s tent, canvas glowing with daylight, a cot and a stack of maps blurred in the background. Lee sits slightly off-center frame-right, one hand absently resting on the wolfhound&#x27;s head in his lap. Shallow depth of field. This is the mockumentary confessional format: subject alone, speaking to the documentary crew.
+
+CUT 1 — Locked-off 50mm confessional frame, micro-drift, chest up:
+Lee, with the tired patience of a genius among amateurs, to the lens: &quot;Congress chose George because he is tall and owns a uniform.&quot; A beat. He scratches the wolfhound&#x27;s ear without looking at it.
+
+CUT 2 — Same frame, the push-in begins, slow and continuous:
+Lee, factual, no boast — just inventory: &quot;I speak five languages.&quot; The instant the line lands, the wolfhound lifts its head from his lap and BARKS once, clearly, visibly, directly at the camera — then settles back down.
+
+CUT 3 — Same frame, push-in completes to a tight medium:
+Lee does not look at the dog. Does not blink. The smallest possible correction, delivered to the lens with total conviction: &quot;Six.&quot; He holds the camera&#x27;s gaze, one eyebrow rising a fraction. The wolfhound sighs audibly, visibly deflating on his lap. Hold two full seconds.</pre>
+    </div>
+  </div>
+
+  <div class="scene">
+    <div class="scene-header">
+      <input type="checkbox" data-scene="4">
+      <div class="scene-num">4.</div>
+      <div class="scene-desc">The rum mutiny — “The rum is a privilege—” “NON-NEGOTIABLE.” George&#x27;s first look into the lens.</div>
+    </div>
+
+    <div class="prompt-block">
+      <div class="prompt-label">
+        <span>Prompt 4 · 15s · job 847aebaa</span>
+        <button class="copy-btn">Copy</button>
+      </div>
+      <pre class="prompt">Style: Ultra-photorealistic cinematic mockumentary — The Office (US) documentary grammar set in July 1775. Shot on 35mm film, handheld documentary camera. Fully photographic realism, never animated.
+World: Continental Army camp, Cambridge, Massachusetts, summer 1775. Everything period-authentic. Absolutely no modern objects.
+Lighting: Natural light only — overcast New England daylight. Camera on the shadow side. Faint campfire-smoke haze.
+Camera: Documentary-crew behavior — handheld micro-shake, snap-zooms onto reactions. Every move motivated.
+Motion: Fluid, smooth, natural movement at real-time speed — no rushed or jerky motion, no slow motion. Hold reactions; let beats breathe.
+Acting: Dry deadpan workplace-documentary delivery. Micro-pauses, precise eye-lines, living eyes. Characters may glance at the lens; the crew is never acknowledged.
+Dialogue: Spoken on camera exactly as scripted. ONE on-camera speaker per cut, EXCEPT the scripted unison crowd line, which the whole visible crowd speaks together. The General&#x27;s voice matches the attached audio reference. No narrator, no music, no subtitles.
+Sound: Every audible event has a visible or explicitly off-screen source.
+Continuity: Match the attached reference images exactly — no identity drift, no unscripted props (no pipes, no toothpicks).
+Physics: Real weight, correct contact shadows.
+Technical: 24fps, 180° shutter, maximum photoreal detail, no jitter.
+
+Characters:
+GENERAL WASHINGTON — matches the first reference image exactly: mid-40s, tall, auburn hair tied back, immaculate blue-and-buff uniform.
+JOSEPH REED — matches the second reference image exactly: early 30s, slim, sharp-featured, dark hair tied back, plain dark civilian coat. Standing half a step behind Washington, already braced.
+SOLDIER SPOKESMAN — barrel-chested militiaman, 40s, leather apron over homespun, arms crossed, the calm of a man holding all the cards.
+THE CROWD — forty-odd militiamen of every shape gathered at the rum tent, tin cups in hands.
+
+Scene:
+The rum tent: a wide canvas awning over barrels, mid-afternoon, overcast. The crowd of militiamen forms a loose semicircle facing Washington, who stands frame-left with Reed just behind his shoulder. The Soldier Spokesman stands at the front of the crowd, frame-right, ten feet from Washington. Cups everywhere. Nobody is drunk; everybody is firm.
+
+CUT 1 — Handheld 35mm wide from behind Washington&#x27;s shoulder, the crowd filling the frame:
+The Spokesman, respectful but immovable, arms crossed: &quot;We&#x27;ll fight, General. But the rum ration&#x27;s non-negotiable.&quot; Murmured agreement rolls through the visible crowd — nods, raised cups.
+
+CUT 2 — Snap-zoom to Washington, 85mm medium close:
+Washington lifts one hand slightly — the reasonable-men gesture — and begins, measured: &quot;The rum is a privilege—&quot;
+
+CUT 3 — Fast pull back to the full wide, the entire crowd on camera:
+THE ENTIRE CROWD, instantly, in perfect unison, every visible mouth moving as one, flat and final: &quot;NON-NEGOTIABLE.&quot; A beat of total silence. Washington stands motionless. Then he turns his head slowly — deliberately — to the documentary lens and holds, expressionless, as Reed studies the ground beside him with great interest. Hold three full seconds.</pre>
+    </div>
+  </div>
+
+  <div class="scene">
+    <div class="scene-header">
+      <input type="checkbox" data-scene="5">
+      <div class="scene-num">5.</div>
+      <div class="scene-desc">Confessional: GEORGE — “Yesterday I lost a vote.”</div>
+    </div>
+
+    <div class="prompt-block">
+      <div class="prompt-label">
+        <span>Prompt 5 · 15s · job 7678d042</span>
+        <button class="copy-btn">Copy</button>
+      </div>
+      <pre class="prompt">Style: Ultra-photorealistic cinematic mockumentary — The Office (US) documentary grammar set in July 1775. Shot on 35mm film. Fully photographic realism, never animated.
+World: Cambridge, Massachusetts, 1775. Period-authentic. No modern objects.
+Lighting: Natural window light from the left in a wainscoted colonial study.
+Camera: Documentary talking-head confessional — locked-off with handheld micro-drift, one slow push-in timed to the final line.
+Motion: Fluid, smooth, natural movement at real-time speed — no rushed or jerky motion, no slow motion. Hold reactions; let beats breathe.
+Acting: Dry deadpan workplace-documentary delivery. Micro-pauses, precise eye-lines, living eyes, chest rise from breathing. The subject speaks directly to the lens.
+Dialogue: Spoken on camera exactly as scripted. ONE speaker. His voice matches the attached audio reference. No narrator, no music, no subtitles.
+Sound: Quiet room tone; faint muffled camp noise through the window. Nothing else.
+Continuity: Match the attached reference image exactly — the same wainscoted study as his previous confessionals. No unscripted props.
+Technical: 24fps, 180° shutter, maximum photoreal detail, no jitter.
+
+Characters:
+GENERAL WASHINGTON — matches the reference image exactly: mid-40s, tall, auburn hair tied back, immaculate blue-and-buff uniform. Seated with the posture of a marble statue, hands folded. The composure of a man performing composure.
+
+Scene:
+Confessional interview in the Vassall House study — wainscoted walls, bookshelves soft in the background, window light from the left. Washington seated slightly off-center frame-left, chest up, shallow depth of field.
+
+CUT 1 — Locked-off 50mm confessional frame, micro-drift:
+Washington, measured, diplomatic, to the lens: &quot;In Virginia, when I give an instruction, it is followed.&quot; A considered pause — he chooses the next words like a man stepping between puddles: &quot;Here, it is… put to a vote.&quot;
+
+CUT 2 — Same frame, the slow push-in begins:
+A long silence. Four full seconds. His jaw tightens once. His eyes drift briefly toward the window — toward the camp — and return to the lens carrying something new.
+
+CUT 3 — Push-in lands at tight medium:
+Quietly. Factually. The confession of a man who has never lost anything before: &quot;Yesterday I lost a vote.&quot; He does not blink. His chest rises once, slowly. Hold three full seconds on his unblinking dignity.</pre>
+    </div>
+  </div>
+
+  <div class="scene">
+    <div class="scene-header">
+      <input type="checkbox" data-scene="6">
+      <div class="scene-num">6.</div>
+      <div class="scene-desc">The geese — gunpowder as morale. “I&#x27;ll ask about the powder.”</div>
+    </div>
+
+    <div class="prompt-block">
+      <div class="prompt-label">
+        <span>Prompt 6 · 15s · job 1e2d9b04</span>
+        <button class="copy-btn">Copy</button>
+      </div>
+      <pre class="prompt">Style: Ultra-photorealistic cinematic mockumentary — The Office (US) documentary grammar set in July 1775. Shot on 35mm film, handheld documentary camera. Fully photographic realism, never animated.
+World: Continental Army camp, Cambridge, Massachusetts, summer 1775. Period-authentic. No modern objects.
+Lighting: Natural light only — overcast daylight, musket smoke drifting.
+Camera: Documentary-crew behavior — tilts, snap-zooms, refocus pulls. Every move motivated.
+Motion: Fluid, smooth, natural movement at real-time speed — no rushed or jerky motion, no slow motion. Hold reactions; let beats breathe.
+Acting: Dry deadpan workplace-documentary delivery. Micro-pauses, precise eye-lines. Characters may glance at the lens.
+Dialogue: Spoken on camera exactly as scripted. ONE on-camera speaker per cut; off-screen replies allowed and preferred. The General&#x27;s voice matches the attached audio reference. No narrator, no music, no subtitles.
+Sound: Every audible event has a visible or explicitly off-screen source — the musket fire comes from soldiers VISIBLE at the frame edge; geese are visible overhead when heard.
+Continuity: Match the attached reference images exactly — no identity drift, no unscripted props (no pipes, no toothpicks).
+Physics: Real weight, correct contact shadows.
+Technical: 24fps, 180° shutter, maximum photoreal detail, no jitter.
+
+Characters:
+GENERAL WASHINGTON — matches the first reference image exactly: mid-40s, tall, auburn hair tied back, immaculate blue-and-buff uniform.
+JOSEPH REED — matches the second reference image exactly: early 30s, slim, sharp-featured, dark hair tied back, plain dark coat.
+SOLDIERS — a loose cluster of militiamen at the right edge of frame, muskets raised skyward, cheerfully firing at geese.
+
+Scene:
+Open ground at the camp&#x27;s edge, late afternoon, overcast. A ragged V of geese crosses the sky. At frame right, a cluster of soldiers fires muskets upward, whooping between shots, powder smoke drifting across. Washington and Reed stand frame-left in a loose two-shot, watching. The geese are entirely unharmed and unhurried.
+
+CUT 1 — Tilt up from the two men to the sky, 35mm handheld:
+The geese cross in formation, serene. Two musket cracks from the visible soldiers at frame edge; smoke drifts through the frame; the geese do not even alter course. A whoop of celebration from the soldiers anyway.
+
+CUT 2 — 85mm medium on Washington, Reed&#x27;s shoulder soft at frame edge:
+Washington watches the sky, expression unreadable. Without turning his head: &quot;Why are they firing?&quot; From off-screen, Reed&#x27;s voice, flat: &quot;Geese, sir.&quot; Washington&#x27;s eyes narrow a fraction as another crack sounds from the visible shooters.
+
+CUT 3 — Reverse: 50mm medium on Reed, Washington&#x27;s shoulder soft in foreground:
+Reed, with the weariness of a man who has already accepted the answer: &quot;It&#x27;s mostly morale.&quot; A beat. From off-screen, Washington, very quietly: &quot;That is gunpowder.&quot; Reed&#x27;s eyes slide sideways to the documentary lens — the full Jim look — and he says, already walking: &quot;…I&#x27;ll ask about the powder.&quot;</pre>
+    </div>
+  </div>
+
+  <div class="scene">
+    <div class="scene-header">
+      <input type="checkbox" data-scene="7">
+      <div class="scene-num">7.</div>
+      <div class="scene-desc">War room, dusk — Gates delivers the inventory. “Nine rounds each. Ish.”</div>
+    </div>
+
+    <div class="prompt-block">
+      <div class="prompt-label">
+        <span>Prompt 7 · 15s · job 372f2b24</span>
+        <button class="copy-btn">Copy</button>
+      </div>
+      <pre class="prompt">Style: Ultra-photorealistic cinematic mockumentary — The Office (US) documentary grammar set in July 1775. Shot on 35mm film, handheld documentary camera. Fully photographic realism, never animated.
+World: Cambridge, Massachusetts, 1775. Period-authentic. No modern objects.
+Lighting: Dusk interior — candlelight only, warm pools of light on the table, shadows deep at the room&#x27;s edges.
+Camera: Documentary-crew behavior — slow orbit, insert cuts. Every move motivated.
+Motion: Fluid, smooth, natural movement at real-time speed — no rushed or jerky motion, no slow motion. Hold reactions; let beats breathe.
+Acting: Dry deadpan workplace-documentary delivery. Micro-pauses, precise eye-lines. Bureaucratic calm meets slow-dawning horror.
+Dialogue: Spoken on camera exactly as scripted. ONE on-camera speaker per cut; off-screen lines allowed and preferred. The General&#x27;s voice matches the attached audio reference. No narrator, no music, no subtitles.
+Sound: Candle crackle, paper slide, a ticking clock somewhere in the room. Nothing without a source.
+Continuity: Match the attached reference images exactly — no identity drift, no unscripted props.
+Physics: Real weight, correct contact shadows.
+Technical: 24fps, 180° shutter, maximum photoreal detail, no jitter.
+
+Characters:
+GENERAL HORATIO GATES — matches the first reference image exactly: 47, stocky, thinning grey hair, ruddy round face, small wire reading spectacles low on his nose, neat provincial uniform, leather folio. The energy of a man announcing a bake sale.
+GENERAL WASHINGTON — matches the second reference image exactly: seated at the head of the table, mid-40s, blue-and-buff uniform.
+OFFICERS — three or four uniformed officers standing around the table, faces half-lit by candles.
+
+Scene:
+The headquarters war room at dusk — a long wooden table covered with a map of Boston, candlesticks, wax stubs. Washington seated at the head of the table frame-left. Gates stands mid-table frame-right, opening his folio with ceremony. Officers ring the table in the shadows.
+
+CUT 1 — Slow orbit around the table, 35mm, candle flames licking the lens edge:
+Gates extracts a single sheet from his folio, aligns its corners, and slides it across the map to Washington with the reverence of a man serving a subpoena: &quot;General. The complete inventory of gunpowder.&quot;
+
+CUT 2 — Top-down insert: the single sheet lands on the map of Boston, candlelight flickering across one short column of figures:
+From off-screen, Washington&#x27;s voice, flat: &quot;This says thirty-six barrels.&quot; Gates, off-screen, pleasantly: &quot;Yes, sir. I double-checked.&quot; A pause exactly long enough to hope. &quot;It got worse.&quot;
+
+CUT 3 — 50mm medium on Gates, candlelit, spectacles catching the flame:
+Gates consults the folio one last time, pushes his spectacles up his nose with one finger, and delivers the arithmetic with the serenity of a man reading a grocery list: &quot;Nine rounds each.&quot; A beat. &quot;Ish.&quot; He closes the folio with a soft, terrible little snap.</pre>
+    </div>
+  </div>
+
+  <div class="scene">
+    <div class="scene-header">
+      <input type="checkbox" data-scene="8">
+      <div class="scene-num">8.</div>
+      <div class="scene-desc">THE SILENCE — one unbroken push-in on George. Lee whispers to the lens.</div>
+    </div>
+
+    <div class="prompt-block">
+      <div class="prompt-label">
+        <span>Prompt 8 · 15s · job 1e15beee</span>
+        <button class="copy-btn">Copy</button>
+      </div>
+      <pre class="prompt">Style: Ultra-photorealistic cinematic mockumentary — The Office (US) documentary grammar set in July 1775. Shot on 35mm film. Fully photographic realism, never animated.
+World: Cambridge, Massachusetts, 1775. Period-authentic. No modern objects.
+Lighting: Dusk war-room interior — candlelight only, warm pools on the table, deep shadow beyond.
+Camera: ONE UNBROKEN SHOT — a single, agonizingly slow push-in for the entire duration. No cuts. The stillness is the scene.
+Motion: Fluid, smooth, natural movement at real-time speed — no slow motion. Almost nothing moves, and that is the point.
+Acting: Total restraint. Breathing, blinking officers; one frozen general. Living eyes, candle catch-lights.
+Dialogue: Only ONE whispered line, spoken on camera at the scripted moment. No other speech. No narrator, no music, no subtitles.
+Sound: The ticking of a clock. Candle crackle. Officers shifting their weight. One whisper.
+Continuity: Match the attached reference images exactly — same war room, same table, same candles as the inventory scene. No unscripted props.
+Technical: 24fps, 180° shutter, maximum photoreal detail, no jitter.
+
+Characters:
+GENERAL WASHINGTON — matches the first reference image exactly: seated at the head of the war-room table, the inventory sheet held in both hands, absolutely motionless, eyes fixed on the paper.
+GENERAL CHARLES LEE — matches the second reference image exactly: standing among the officers at the table&#x27;s edge, the only one enjoying himself.
+OFFICERS — three or four uniformed men around the table, exchanging glances, not daring to speak.
+
+Scene:
+The war room, one minute after the inventory landed. Washington sits at the head of the table frame-center, the sheet in his hands, candlelight on his face. He does not move. The officers stand around him in the half-dark, trading looks. A clock ticks somewhere off-screen. The camera begins at the far end of the table and pushes toward Washington the entire time — slow, continuous, merciless.
+
+THE SHOT — Single unbroken slow push-in, 40mm to 85mm feel, table-height:
+Seconds 1–6: Washington stares at the paper. The clock ticks. An officer shifts his weight; leather creaks. Nobody speaks. Seconds 6–10: An officer at frame edge looks at another officer. The other officer looks away. A candle gutters and recovers. Washington has not moved. Seconds 10–13: LEE leans slowly into the left edge of frame toward the documentary lens, never taking his eyes off Washington, and whispers, delighted: &quot;He&#x27;s been like this for half an hour.&quot; Seconds 13–15: Lee withdraws from frame. The push-in continues into Washington&#x27;s unblinking, candlelit face. The clock ticks twice more. Hold.</pre>
+    </div>
+  </div>
+
+  <div class="scene">
+    <div class="scene-header">
+      <input type="checkbox" data-scene="9">
+      <div class="scene-num">9.</div>
+      <div class="scene-desc">Confessional: REED — “Nine bullets a man and a strongly worded cause.”</div>
+    </div>
+
+    <div class="prompt-block">
+      <div class="prompt-label">
+        <span>Prompt 9 · 15s · job 684b1b33</span>
+        <button class="copy-btn">Copy</button>
+      </div>
+      <pre class="prompt">Style: Ultra-photorealistic cinematic mockumentary — The Office (US) documentary grammar set in July 1775. Shot on 35mm film, handheld documentary camera. Fully photographic realism, never animated.
+World: Continental Army camp, Cambridge, Massachusetts, summer 1775. Everything period-authentic. Absolutely no modern objects.
+Lighting: Natural light only — overcast New England daylight. Camera on the shadow side. Faint campfire-smoke haze.
+Camera: Documentary-crew behavior — handheld micro-shake, snap-zooms onto reactions, refocus pulls. Every move motivated.
+Motion: Fluid, smooth, natural human movement at real-time speed — no rushed or jerky motion, no slow motion. Hold reactions; let beats breathe.
+Acting: Dry deadpan workplace-documentary delivery. Micro-pauses, precise eye-lines, living eyes, chest rise from breathing. Characters may glance at the lens; the crew is never acknowledged.
+Dialogue: Spoken on camera exactly as scripted. ONE on-camera speaker per cut. Natural American voice, dry and conversational — never theatrical. No narrator, no music, no subtitles.
+Sound: Every audible event has a visible or explicitly off-screen source. Animals are QUIET unless shown vocalizing on camera.
+Continuity: Match the attached reference image exactly — no identity drift, no unscripted props (no pipes, no toothpicks, no papers).
+Physics: Real weight, correct contact shadows, no floating props.
+Technical: 24fps, 180° shutter, maximum photoreal detail, no jitter.
+
+Characters:
+COLONEL JOSEPH REED — matches the attached reference image exactly: late 30s, lawyer-turned-aide-de-camp, neat dark hair, clean navy-blue coat, composed and precise, his optimism worn down to dry realism.
+
+Scene:
+Confessional interview inside an officer&#x27;s tent, canvas glowing with overcast daylight, a tidy camp desk with papers soft-focus in the background. Reed sits centered on a camp stool, facing the documentary lens, hands folded in his lap.
+
+CUT 1 — Locked-off 50mm documentary interview frame, chest-up, gentle handheld micro-drift, no push-in, flat frame:
+Reed regards the lens with the flat calm of a man reading a weather report. Evenly, without drama: &quot;The greatest army on Earth is across that water.&quot; A small beat; his eyes flick toward the tent wall — the direction of Boston — and back to the lens. Then, just as evenly: &quot;We have nine bullets a man... and a strongly worded cause.&quot; He lets the silence sit. One slow blink. The faintest exhale through the nose — almost a laugh, but he does not allow it. Hold the flat frame to the very end.</pre>
+    </div>
+  </div>
+
+  <div class="scene">
+    <div class="scene-header">
+      <input type="checkbox" data-scene="10">
+      <div class="scene-num">10.</div>
+      <div class="scene-desc">“We bluff.” — George at the window, back to camera; Knox says it first.</div>
+    </div>
+
+    <div class="prompt-block">
+      <div class="prompt-label">
+        <span>Prompt 10 · 15s · job c8d1a45a</span>
+        <button class="copy-btn">Copy</button>
+      </div>
+      <pre class="prompt">Style: Ultra-photorealistic cinematic mockumentary — The Office (US) documentary grammar set in July 1775. Shot on 35mm film, handheld documentary camera. Fully photographic realism, never animated.
+World: Continental Army headquarters, Cambridge, Massachusetts, summer 1775. Everything period-authentic. Absolutely no modern objects.
+Lighting: Candlelight interiors at night — warm candle key, deep shadows, dark window glass.
+Camera: Documentary-crew behavior — handheld micro-shake, slow motivated pans, refocus pulls. Every move motivated.
+Motion: Fluid, smooth, natural human movement at real-time speed — no rushed or jerky motion, no slow motion. Hold reactions; let beats breathe.
+Acting: Dry deadpan workplace-documentary delivery. Micro-pauses, precise eye-lines, living eyes, chest rise from breathing. Nobody mugs — this scene is quiet and grave.
+Dialogue: Spoken exactly as scripted. ONE on-camera speaker per cut; a speaker facing away from camera counts as off-screen. The General&#x27;s voice matches the attached audio reference. No narrator, no music, no subtitles.
+Sound: Every audible event has a visible or explicitly off-screen source. Only candle flicker, cloth, breathing, low room tone.
+Continuity: Match the attached reference images exactly — no identity drift, no unscripted props (no pipes, no toothpicks).
+Physics: Real weight, correct contact shadows, no floating props.
+Technical: 24fps, 180° shutter, maximum photoreal detail, no jitter.
+
+Characters:
+GENERAL WASHINGTON — matches the first reference image exactly: mid-40s, tall, broad, auburn hair tied back in a queue, immaculate blue-and-buff Continental general&#x27;s uniform. His voice matches the attached audio reference.
+COLONEL HENRY KNOX — matches the second reference image exactly: mid-20s, round, beaming bookseller&#x27;s face now dimmed to soft gravity, spectacles catching candlelight.
+Two other officers as soft-focus background figures at the table.
+
+Scene:
+The headquarters war room at night — a long wooden table covered with a map of Boston, candlesticks burning low, wax stubs. Washington stands at the window frame-right with his BACK to the camera, silhouetted against the dark glass and the distant scattered lights of Boston. The officers sit at the table frame-left, faces candlelit, subdued.
+
+CUT 1 — Handheld 35mm from behind the table, officers&#x27; dark shoulders in the foreground, Washington&#x27;s silhouetted back at the window frame-right:
+Washington speaks facing the window, never turning around, his reflection faint in the dark panes, voice low and level: &quot;Not a word of this leaves the room. If the enemy learns how weak we are, this war ends by Friday.&quot;
+
+CUT 2 — Slow candlelit pan across the officers&#x27; faces at the table, 50mm, ending on Knox:
+The officers absorb it in silence. KNOX, on camera, softly, almost to himself: &quot;...So we bluff.&quot;
+
+CUT 3 — 85mm profile of Washington at the window, silhouette edged by candlelight, shallow focus:
+A long beat. Washington&#x27;s jaw sets; he gives one small nod to the darkness outside and says quietly, in profile: &quot;We bluff.&quot; Hold on the silhouette and the breathing candle flame to the end.</pre>
+    </div>
+  </div>
+
+  <div class="scene">
+    <div class="scene-header">
+      <input type="checkbox" data-scene="11">
+      <div class="scene-num">11.</div>
+      <div class="scene-desc">The letter to Martha — no dialogue on set; sincere VO laid in post over quill, candlelight, wax seal, and the smallest real smile.</div>
+    </div>
+
+    <div class="prompt-block">
+      <div class="prompt-label">
+        <span>Prompt 11 · 15s · job 35febfe3</span>
+        <button class="copy-btn">Copy</button>
+      </div>
+      <pre class="prompt">Style: Ultra-photorealistic cinematic mockumentary — The Office (US) documentary grammar set in July 1775. Shot on 35mm film, documentary camera gone gentle and patient. Fully photographic realism, never animated.
+World: Continental Army headquarters, Cambridge, Massachusetts, summer 1775. Everything period-authentic. Absolutely no modern objects.
+Lighting: A single candle is the only light source — warm amber key, soft falloff into darkness.
+Camera: Slow, patient, motivated drifts and tilts. No comedy in the frame in this scene.
+Motion: Fluid, smooth, natural human movement at real-time speed — no rushed or jerky motion, no slow motion. Let every beat breathe.
+Acting: Sincere, tired, human. No mugging, no jokes. Living eyes with candle catch-lights, chest rise from breathing.
+Dialogue: NO dialogue in this scene — nobody speaks. No voiceover, no narrator, no music, no subtitles.
+Sound: Only quiet diegetic sound — the scratch of the quill nib, candle flicker, a distant sleeping-camp murmur through the window. Every audible event has a visible or explicitly off-screen source. No speech, no music.
+Continuity: Match the attached reference image exactly — no identity drift, no unscripted props.
+Physics: Real weight, correct contact shadows, real ink, real wax.
+Technical: 24fps, 180° shutter, maximum photoreal detail, no jitter.
+
+Characters:
+GENERAL WASHINGTON — matches the attached reference image exactly: mid-40s, tall, auburn hair tied back in a queue, blue-and-buff uniform with the coat collar loosened after a long day. For once there is no performance in him: he is tired, sincere, human.
+
+Scene:
+Night. The Vassall House study lit by a single candle. Washington sits at a writing desk composing a letter home, the house silent around him, the window dark.
+
+CUT 1 — Extreme close-up: the quill nib moving across the paper, wet ink glinting in candlelight, real cursive handwriting motion, shallow focus:
+The quill travels steadily across the page. The scratch of the nib is the loudest sound in the world.
+
+CUT 2 — Slow drift up from the page to Washington&#x27;s candlelit face, 85mm, gentle:
+His eyes follow the line he is writing. He pauses mid-thought and looks at nothing for a moment — some private arithmetic of worry — then returns to the page and keeps writing.
+
+CUT 3 — Insert: his hands fold the finished letter and press a brass seal into hot red wax; then tilt up to his face:
+The seal sets into the wax. And there — the smallest real smile of the day, barely a movement at all, gone almost before it arrives. Hold on his candlelit face to the end.</pre>
+    </div>
+  </div>
+
+  <div class="scene">
+    <div class="scene-header">
+      <input type="checkbox" data-scene="12">
+      <div class="scene-num">12.</div>
+      <div class="scene-desc">Dawn cannon tag — the cold-open callback. “Log the powder.” / “Aye. That one was loaded too.”</div>
+    </div>
+
+    <div class="prompt-block">
+      <div class="prompt-label">
+        <span>Prompt 12 · 15s · job 2dc7c4a6</span>
+        <button class="copy-btn">Copy</button>
+      </div>
+      <pre class="prompt">Style: Ultra-photorealistic cinematic mockumentary — The Office (US) documentary grammar set in July 1775. Shot on 35mm film, handheld documentary camera. Fully photographic realism, never animated.
+World: Continental Army camp, Cambridge, Massachusetts, summer 1775. Everything period-authentic. Absolutely no modern objects.
+Lighting: Cold blue-grey dawn, low mist, first pale light through the smoke haze.
+Camera: Documentary-crew behavior — handheld micro-shake, whip-pans, hard flinch on the blast. Every move motivated.
+Motion: Fluid, smooth, natural human and animal movement at real-time speed — no rushed or jerky motion, no slow motion. Hold reactions; let beats breathe.
+Acting: Dry deadpan workplace-documentary delivery. Nobody is surprised except the camera operator.
+Dialogue: Spoken on camera exactly as scripted. ONE on-camera speaker per cut. The General&#x27;s voice matches the attached audio reference. No narrator, no music, no subtitles.
+Sound: Every audible event has a visible source. The cannon fires ON CAMERA exactly ONCE with a single full boom; after it, ringing quiet and a flurry of chicken wings. No other explosions, no repeated booms. Animals are QUIET unless shown vocalizing on camera.
+Continuity: Match the attached reference images exactly — the third reference image is this exact location and cannon. No identity drift. No unscripted props (no toothpicks, no papers); the militiaman&#x27;s clay pipe IS scripted and allowed.
+Physics: Real recoil weight on the cannon, real muzzle flash and smoke, correct contact shadows.
+Technical: 24fps, 180° shutter, maximum photoreal detail, no jitter.
+
+Characters:
+GENERAL WASHINGTON — matches the first reference image exactly: mid-40s, tall, auburn hair tied back, immaculate blue-and-buff uniform. His voice matches the attached audio reference.
+MILITIAMAN — matches the second reference image exactly: weathered New England militiaman in a patched wool coat, leaning on the field cannon, a clay pipe in his hand (scripted).
+
+Scene:
+Dawn, cold mist. The same field cannon and stretch of camp ground as the third reference image — the episode&#x27;s opening location. The militiaman leans on the cannon exactly as he did that first morning. A few chickens peck near the wheels. Tents pale in the background.
+
+CUT 1 — Wide 24mm, deliberately the exact framing of the episode&#x27;s first shot; the cannon frame-center in dawn mist, the militiaman leaning on it:
+A quiet beat of morning. Then the cannon FIRES on camera — full muzzle flash, violent recoil, thick smoke rolling — the handheld camera flinches hard and the chickens explode into the air through frame.
+
+CUT 2 — Whip-pan left finds Washington mid-stride crossing the lane in profile, tracked handheld, unbothered, not even glancing at the cannon:
+Washington does not break step and does not turn his head. Dry, over his shoulder as he walks out of frame: &quot;Log the powder.&quot;
+
+CUT 3 — Back to the militiaman, 50mm medium; smoke drifting past him, he pats the cannon barrel once, appreciative:
+Calling after the departing General, entirely unbothered, pipe in hand: &quot;Aye. That one was loaded too.&quot; He nods to himself. The chickens resettle in the mud.</pre>
+    </div>
+  </div>
+
+  <div class="scene">
+    <div class="scene-header">
+      <input type="checkbox" data-scene="13">
+      <div class="scene-num">13.</div>
+      <div class="scene-desc">Final confessional: GEORGE — “It will have to do.”</div>
+    </div>
+
+    <div class="prompt-block">
+      <div class="prompt-label">
+        <span>Prompt 13 · 15s · job ddbfe572</span>
+        <button class="copy-btn">Copy</button>
+      </div>
+      <pre class="prompt">Style: Ultra-photorealistic cinematic mockumentary — The Office (US) documentary grammar set in July 1775. Shot on 35mm film, handheld documentary camera. Fully photographic realism, never animated.
+World: Continental Army headquarters, Cambridge, Massachusetts, summer 1775. Everything period-authentic. Absolutely no modern objects.
+Lighting: Soft window daylight from the left, interior study, gentle falloff.
+Camera: Locked-off documentary interview frame with gentle micro-drift; ONE slow continuous push-in across the whole shot — the slowest push of the episode.
+Motion: Fluid, smooth, natural human movement at real-time speed — no rushed or jerky motion, no slow motion. Hold every pause; let the silence work.
+Acting: Dry, contained, presidential restraint. Micro-pauses, precise eye-line into the lens, living eyes with window catch-lights, chest rise from breathing. No mugging — the weight is in the stillness.
+Dialogue: Spoken on camera exactly as scripted, ONE speaker, direct to lens. The General&#x27;s voice matches the attached audio reference. No narrator, no music, no subtitles.
+Sound: Quiet interior room tone only — a distant muffled camp outside the window. Every audible event has a visible or explicitly off-screen source.
+Continuity: Match the attached reference image exactly — no identity drift, no unscripted props (no pipes, no toothpicks, no papers).
+Physics: Real weight, correct contact shadows.
+Technical: 24fps, 180° shutter, maximum photoreal detail, no jitter.
+
+Characters:
+GENERAL WASHINGTON — matches the attached reference image exactly: mid-40s, tall, broad, auburn hair tied back in a queue, immaculate blue-and-buff Continental general&#x27;s uniform. His voice matches the attached audio reference. Two days into command of an impossible army.
+
+Scene:
+Confessional interview in the Vassall House study — wainscoted walls, bookshelves soft-focus in the background, window light from the left. Washington sits centered in a high-backed chair facing the documentary lens, hands folded, very still.
+
+CUT 1 — Single unbroken 50mm interview frame, chest-up; the push-in begins almost imperceptibly and lands tight on the final line:
+Hands folded. Very still. He looks into the lens and asks it the question himself: &quot;Do I believe we can win?&quot; A long pause — two full seconds; his eyes never leave the lens. &quot;I believe we cannot be seen losing. It is not the same thing.&quot; A beat. His chin lifts a fraction. Quieter, final, as the push lands tight on his face: &quot;It will have to do.&quot; Hold there. He does not blink until the very end.</pre>
+    </div>
+  </div>
+
+</div>
+
+<script>
+  document.querySelectorAll('.scene input[type="checkbox"]').forEach(cb => {
+    const key = 'shotlist-scene-' + cb.dataset.scene + '-done';
+    if (localStorage.getItem(key) === '1') {
+      cb.checked = true;
+      cb.closest('.scene').classList.add('done');
+    }
+    cb.addEventListener('change', () => {
+      localStorage.setItem(key, cb.checked ? '1' : '0');
+      cb.closest('.scene').classList.toggle('done', cb.checked);
+    });
+  });
+  document.querySelectorAll('.copy-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const pre = btn.closest('.prompt-block').querySelector('pre.prompt');
+      navigator.clipboard.writeText(pre.textContent).then(() => {
+        btn.classList.add('copied');
+        const original = btn.textContent;
+        btn.textContent = 'Copied';
+        setTimeout(() => { btn.classList.remove('copied'); btn.textContent = original; }, 1500);
+      });
+    });
+  });
+</script>
+</body>
+</html>
