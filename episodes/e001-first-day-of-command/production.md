@@ -152,3 +152,23 @@ v5), harpsichord 0.22→0.26. All else identical to v5.
 v6 media_id: 7ac65be9-4704-498d-845a-64b7db7521b3
 URL: https://d2ol7oe51mr4n9.cloudfront.net/user_31undoF7i6cu3qRde6al7QsmiT3/7ac65be9-4704-498d-845a-64b7db7521b3.mp4
 Cost: 0 credits.
+
+## Act II validation shoot — 2026-07-31
+
+Ultra plan active (balance 6,015 at start). New pipeline per seedance-shotlist-director
+skill + logged Act I lessons. Prep: Lee portrait f9bd20dd, Gates portrait 2ebbfc13,
+George voice ref extracted from Act I confessional (audio media c5b1aa9e), location
+stills from Act I frames (trench e0f77f81, camp lane 8db4dc15).
+
+Validation clips (15s, 1080p std, 135 cr each; voice + location + character refs attached):
+| scene | job id | status |
+|---|---|---|
+| II-1 Chain of command (Ezekiel) | d1b8af67-f981-4dfb-bc32-c8a008bc4988 | done |
+| II-2a Lee arrives (dogs first) | 4226b1dc-9ae4-4a36-83d4-f641c309f54f | done |
+
+URLs:
+https://d8j0ntlcm91z4.cloudfront.net/user_31undoF7i6cu3qRde6al7QsmiT3/hf_20260731_123307_d1b8af67-f981-4dfb-bc32-c8a008bc4988.mp4
+https://d8j0ntlcm91z4.cloudfront.net/user_31undoF7i6cu3qRde6al7QsmiT3/hf_20260731_123232_4226b1dc-9ae4-4a36-83d4-f641c309f54f.mp4
+
+Spend: ~271 cr (2 clips + 2 portraits). Gate: user judges vs Act I before batch-shooting
+the remaining Act II scenes (~9 scenes ≈ 1,200 cr).
